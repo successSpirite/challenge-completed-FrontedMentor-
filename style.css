@@ -1,0 +1,72 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+section{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 550px;
+    background-color:hsl(0, 0%, 12%)
+;
+    border-radius: .4em;
+
+}
+.Pro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .4em;
+    color: hsl(0, 0%, 100%);
+}
+.Pro-img h1{
+   font-size: calc( .8em + .8vw);
+}
+.Pro-img h2{
+    font-size: calc(.4em + .4vw);
+    color: hsl(75, 94%, 57%);
+}
+.Pro-img h3{
+    text-align: center;
+    margin: 1.3em 0 0 0;
+    font-size: calc(.6em + .6vw);
+}
+.Pro-img img{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-block: -1.5em;
+    gap: 1em;
+}
+.content .content-grid{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 20%;
+      color: hsl(0, 0%, 100%);
+      border-radius: 1em;
+      background-color: hsl(0, 0%, 20%) ;
+}
+.content .content-grid:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: #000;
+}
